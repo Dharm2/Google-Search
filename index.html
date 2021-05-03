@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="googleSearch.css">
+    <link rel="shortcut icon" href="images1/dhrm.png" type="image/x-icon">
+
+
+    <title>google.com</title>
+</head>
+<body>
+
+    <div id="hero">
+
+        <div id="searchBox">
+
+             <img src="images1/google1.png" id="googleIcon">
+             <input type="text" placeholder="Search Google or type a URL">
+             <img src="images1/microphone.png" class="mic-icon">
+
+        </div>
+
+
+        <p>Dharm Bharodiya</p>
+        <button onclick="changeColor()" id="colorBtn">Click Me To Change Color</button>
+
+    </div>
+    
+
+
+    <script>
+
+        var searchBox  = document.getElementById("searchBox");
+        var googleIcon = document.getElementById("googleIcon");
+
+        googleIcon.onclick = function(){
+            searchBox.classList.toggle("active");
+        }
+
+        function changeColor(){
+            document.getElementById("searchBox").style.background = "#f0f3ff";
+            document.getElementsById("hero").style.backgroundColor = "#f0f3ff";
+            // document.getElementById("searchBox").classList.toggle("colorChg");
+        };
+
+    </script>
+
+</body>
+</html>
