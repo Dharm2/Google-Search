@@ -1,0 +1,178 @@
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Varela Round', sans-serif;
+
+    }
+
+    #hero
+    {
+        width: 100%;
+        height: 100vh;
+        /* background: #f0f3ff; */
+        background-color: #1c1d1f;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    #searchBox
+    {
+        margin: 10px;
+        border-radius: 60px;
+        padding: 30px;
+        /* background: #f0f3ff; */
+        background-color: #1c1d1f;
+        display: flex;
+        align-items: center;
+        /* box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                    -6px -6px 10px -1px rgba(255, 255, 255, 0.7); */
+
+        box-shadow: 6px 6px 10px -1px rgb(0 0 0 / 15%), -5px -3px 4px -3px rgb(255 255 255 / 18%);
+    }
+
+    .colorChg
+    {
+        background-color: #f0f3ff;
+    }
+
+    #googleIcon
+    {
+        /* width: 50px; */
+    width: 54px;
+    cursor: pointer;
+    /* padding: 0 8px; */
+    margin-left: 16px;
+    }
+
+    .mic-icon
+    {
+        width: 0;
+        /* width: 25px; */
+        padding: 0 8px;
+        transition: 0.5s;
+        transition-delay: 0.5ss;
+    }
+
+    input{
+        width: 0;
+        /* width: 500px; */
+        font-size: 20px;
+        border: 0;
+        background: transparent;
+        outline: none;
+        color: grey;
+        transition: 2s;
+    }
+
+
+    .active .mic-icon{
+        width: 25px;
+
+    }
+
+    .active input{
+        width: 500px;
+        padding: 12px 20px;
+    }
+
+    p{
+        color: grey;
+        font-size: 25px;
+        align-self: flex-end;
+        position: fixed;
+        margin-bottom: 20px;
+    }
+
+    #colorBtn
+    {
+        width: 130px;
+
+        align-self: flex-end;
+        position: fixed;
+        margin-bottom: 55px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+
+    @media screen and (max-width: 600px) {
+        /* #searchBox
+        {
+            width: 350px;
+        }
+        */
+        #hero
+        {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .active .mic-icon{
+            width: 10px;
+        
+        }
+        
+        .active input{
+            width: 250px;
+            padding: 6px 10px;
+        }
+        button{
+            display: none;
+        }
+        p{
+            display: none;
+        }
+
+    }
+    @media screen and (max-width: 400px) {
+
+        *{
+            font-size: 15px;
+        }
+    /* 
+        #searchBox
+        {
+            
+        }
+        */
+        
+        #hero
+        {
+            width: 100%;
+            height: 100vh;
+        }
+
+        /* #searchBox
+        {
+
+        } */
+
+        #googleIcon
+        {
+        /* width: 50px; */
+        width: 33px;
+        cursor: pointer;
+        /* padding: 0 8px; */
+        /* margin-left: 16px; */
+        }
+        
+        .active .mic-icon{
+            width: 10px;
+        
+        }
+        
+        .active input{
+            width: 200px;
+            padding: 4px 10px;
+        }
+
+
+        button{
+            display: none;
+        }
+        p{
+            display: none;
+        }
+    }
